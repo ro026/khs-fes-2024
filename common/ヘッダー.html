@@ -1,0 +1,90 @@
+<html>
+    <div class="header">
+        <div class="header-left">
+            <h1>釜高祭「<span class="slogan">青春開放戦線</span>」</h1>
+            <div>あと<span class="left-day" id="left-day ">35</span>日</div>
+        </div>
+        <div class="header-right">
+            <button onclick="location.href='#timetable'">タイムテーブル</button>
+            <button onclick="location.href='#map'">マップ</button>
+            <button onclick="location.href='#activities'">出し物</button>
+        </div>
+    </div>
+    <div class="content">
+        <p>ここにページのコンテンツが入ります。スクロールしてもヘッダーはページの上部に固定されます。</p>
+        <p>コンテンツがたくさんある場合は、スクロールしてもヘッダーが常に表示されます。</p>
+        <p>長いコンテンツ</p>
+        <p>長いコンテンツ</p>
+        <p>長いコンテンツ</p>
+        <p>長いコンテンツ</p>
+        <p>長いコンテンツ</p>
+        <p>長いコンテンツ</p>
+        <p>長いコンテンツ</p>
+        <p>長いコンテンツ</p>
+        <p>長いコンテンツ</p>
+        <p>長いコンテンツ</p>
+        <p>長いコンテンツ</p>
+        <p>長いコンテンツ</p>
+        <p>長いコンテンツ</p>
+        <p>長いコンテンツ</p>
+        <p>長いコンテンツ</p>
+        <p>長いコンテンツ</p>
+    </div>
+</html>
+
+<style>
+    .header {
+      /* ヘッダーの全体部分のスタイルを以下に指定する */ 
+      position: fixed;
+      display: flex;
+      justify-content: space-between;
+      top: 0;
+      width: 95%;
+      /** 背景色 */
+      background-color: purple;
+      /** 文字色 */
+      color: white;
+      text-align: center;
+      padding: 10px;
+      z-index: 1000;
+    }
+        
+    .header-left {
+        display: flex;
+    }
+    .header-left h1 {
+        /* 釜高祭「＊＊＊」の部分のスタイルを以下に指定する */
+        margin: 0;
+    }
+    .slogan{
+        color:rgb(238, 215, 87)
+    }
+    .left-day {
+        /* あと35日 の部分の 35 の部分のスタイルを以下に指定する */
+        font-size: 30px;
+    }
+
+    .header-right button {
+        /* ヘッダーのメニューボタンのスタイルを以下に指定する */ 
+        background-color: pink
+        color: white
+        border: none;
+        padding: 10px 15px;
+        margin-left: 10px;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+    .header-right button:hover {
+        /* ヘッダーのメニューボタンにホバー（カーソルを合わせた時）のスタイルを以下に指定する */ 
+        background-color: #d2aff4;
+    }
+
+    .content {
+      padding: 60px 20px; /* ヘッダーの高さを避けるためのパディング */
+    }
+
+</style>
+<script>
+    const today=new Date()
+    console.log(today)
+    </script>

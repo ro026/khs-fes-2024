@@ -1,0 +1,52 @@
+<html>
+    <p>
+        <button id="showDialog">ダイアログを開く</button>
+    </p>
+    <dialog id="dialog">
+      <div class="title">小見出し</div>
+      <div class="explanation">説明説明説明説明説明説明</div>
+      <button id="closeBtn" class="close-btn">&times;<!-- ×ボタン --></button>
+    </dialog>
+</html>
+
+<style>
+    #dialog {
+        border: 4px solid rgb(231, 118, 137);
+        max-width: 30%;
+        position:relative;
+        /* ダイアログ全体のスタイルを以下に指定する */
+
+        .close-btn  {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color:rgb(255, 86, 114)
+            /* ×ボタンのスタイルを以下に指定する */
+        }
+    
+        .title {
+            color:rgb(231, 118, 137)
+            /* タイトルのスタイルを以下に指定する */
+        }
+        .explanation {
+            /* タイトルの下の説明のところのスタイルを以下に指定する */
+        }
+    }
+</style>
+
+<script>
+    const showButton = document.getElementById("showDialog");
+    const dialog = document.getElementById("dialog");
+    const closeBtn = dialog.querySelector("#closeBtn");
+
+    showButton.addEventListener("click", () => {
+        dialog.showModal();
+    });
+
+    closeBtn.addEventListener("click", (event) => {
+        dialog.close();
+    });
+</script>
